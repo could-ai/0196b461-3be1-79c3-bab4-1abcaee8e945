@@ -43,7 +43,7 @@ jobs:
         run: flutter build web --release --base-href / # Builds Flutter web application in release mode with base href for correct asset loading
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4 # Uploads build artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3 # Uploads build artifact for GitHub Pages
         with:
           path: ./usr/build/web # Path to the build output directory
 
