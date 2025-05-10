@@ -15,9 +15,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }} # URL for the deployed GitHub Pages site
 
-    env:
-      FLUTTER_SUPPRESS_ANALYTICS: true  # disable Flutter analytics banner and ASCII-art
-
     steps:
       - name: Display GitHub REF and SHA
         run: |
