@@ -16,8 +16,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }} # URL for the deployed GitHub Pages site
 
     env:
-      LANG: en_US.UTF-8       # Ensure UTF-8 encoding for correct box-drawing characters
-      TERM: xterm-256color    # Ensure terminal supports UTF-8 and color
+      FLUTTER_SUPPRESS_ANALYTICS: true  # disable Flutter analytics banner and ASCII-art
 
     steps:
       - name: Display GitHub REF and SHA
